@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag{
+      background-color: #046A38;
+      height: 600px;
+      width: 900px;
+      position: relative;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      z-index: -2;
+    }
+    .flag>p{
+      position: absolute;
+      background-color: #FF671F;
+      height: 200px;
+      width:900px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      z-index: 5;
+
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color:#ff5100;
+      
+    }
+    div div div{
+      position: absolute;
+      background-color: white;
+      height: 200px;
+      width:900px;
+      top: 200px;
+      /* margin-top: 0px;
+      margin-bottom: 0px; */
+      
+
+    }
+    div div div p{
+      position: absolute;
+      background-color: #06038D;
+      height: 200px;
+      width: 200px;
+      
+      border-radius: 50%;
+      left: 350px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      /* apne aap 16px ki boundary lag jaa rahi ha
+      isko hatane ke liye margin 0 krna pad rhaa ha */
+
+      text-align: center;
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 160px;
+      
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>The National Flag of India </p>
+    <div>
+      <div>
+        <p>o</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
