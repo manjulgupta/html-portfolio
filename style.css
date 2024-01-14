@@ -9,6 +9,29 @@ footer {
     background-color: aliceblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 200;
+  font-size: 100%;
+border-radius: 1rem;
+width: 80%;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  
+  background-image: url("./assets/images/exp_bg.jpeg");
+}
+.projects>li{
+  background-color: teal;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding:0rem 1rem 1rem 1rem;
+  list-style: none;
+  width: 80%;
+  max-width: 400px;
+  flex-shrink: 1;
+  
 
-
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
