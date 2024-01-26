@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* BORDER-BOX: MARGIN, PADDING, BORDER INCLUDED INSIDE */
+    border: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: 
+    #131921;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 120px;
+}
+
+.logo{
+    background-image:url("./amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: auto;
+}
+
+/* border class: TO PLACE A BORDER ON HOVERING */
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid whitesmoke;
+    border-radius: 2px;
+}
+/* DONO ME BORDER DENA HAI AUR TRANSPARENT DENA HAI. WARNA FLICKER KAREGI WEBSITE */
+
+/* BOX 2 */
+.add-1{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left: 24px;
+}
+.add-2{
+    font-size: 0.9rem;
+    margin-left: 3px;
+    font-weight: bolder;
+}
+.add-ico{
+    display: flex;
+    align-items: center;
+}
+.add-ico>i{
+    font-size: 2rem;
+}
+
+/* BOX3 */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;  /*aur options try karo*/
+    height: 40px;
+    width: 60%;
+    border-radius: 4px;
+    background-color: #febd69;
+    margin: 5px 0px;
+    border: 2px solid #131921;
+}
+.search-sel{
+    background-color: #e6e6e6;
+    width: 50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+
+    border: none;
+    /* SELECT KA BY DEFAULT BORDER HOTA HAI JO HAT JAYEGA. none YA 0, KUCH BHI LIKH SAKTE HO */
+}
+.search-sel>option{
+    text-align: left;
+}
+
+.search-in{
+    /* height: 50px; */
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+.search-icon{
+    width: 45px;
+    /* text-align: center;
+    justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.3rem;
+    /* TO ALTER ICON SIZE, FONT SIZE IS USED */
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+/* BOX-4 */
+.nav-1{
+    font-size: 0.75rem;
+}
+.nav-2{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* BOX 6 */
+
+.cart>i{
+    font-size: 2rem;
+}
+
+/* panel starts */
+.panel{
+    background-color: #232f3e;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    justify-content: space-evenly;
+    
+}
+.panel-ops{
+    display: flex;
+    
+    width: 80%;
+}
+.panel-ops>p{
+    margin-left: 12px;
+}
+.panel-1{
+    font-weight: bold;
+}
+
+/* hero starts */
+.hero{
+    background-image: url("./hero_image.jpg");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+}
+.hero-msg{
+    background-color: white;
+    height: 40px;
+    width: 95%;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.hero-msg>a{
+    color: #007185;
+}
+
+/* shop section */
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #cccccc;
+}
+.box{
+    
+    width: 23%;
+    height: 350px;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-img{
+    height: 250px;
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box p{
+    color: #007185;
+}
+.box-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
