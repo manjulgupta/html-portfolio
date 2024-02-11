@@ -1,5 +1,4 @@
 
-
 // hero carousel ki script
 (function(){function e(b,c){this.selector=null;c?this.nodes=c:"string"==typeof b?(this.selector=b,this.nodes=document.querySelectorAll(b)):this.nodes=[b];this.length=this.nodes.length;this.el=this.nodes[0]}function d(b){return new e(b)}function k(b,c){function l(a,c,d){a=a||{};e();!1!==c&&r();N=n=f=null;p=-1;C=z=D=E=null;A=!1;B=null;F=!1;q=null;k(a);u();S(f.transition_type,!0);n.find("#"+b+" .ism-caption").css("visibility","hidden");T();ca();x(f.play_type);da();setTimeout(function(){!0!==d&&h()},
 1E3)}function e(){d("#"+b+"-ism-loading-mask").remove();var a=document.createElement("DIV");a.id=b+"-ism-loading-mask";a.style.position="absolute";a.style.zIndex=10;a.style.top=0;a.style.bottom=0;a.style.left=0;a.style.right=0;a.style.backgroundColor="#eee";d("#"+b).el.appendChild(a)}function h(){d("#"+b).show();1==d("#"+b+"-ism-loading-mask").length&&d("#"+b+"-ism-loading-mask").fadeOut(400,function(){d("#"+b+"-ism-loading-mask").remove();O(0);U(0)})}function k(a){for(var c in G){var g=typeof G[c];
@@ -57,15 +56,79 @@ a.preventDefault&&a.preventDefault();a.returnValue=!1},M=function(a){a||(a=windo
 document.documentElement.scrollTop;this.xDiff=Math.abs(this.x-b);this.yDiff=Math.abs(this.y-c)}},w={get:function(a){var b={left:0,top:0};void 0!==a.getBoundingClientRect&&(b=a.getBoundingClientRect());return[b.left,b.top]}},r={transform:e("transform"),perspective:e("perspective"),backfaceVisibility:e("backfaceVisibility")},u=["webkit","moz"],m=window.requestAnimationFrame,x=window.cancelAnimationFrame,v=0;v<u.length&&!m;++v)m=window[u[v]+"RequestAnimationFrame"],x=window[u[v]+"CancelAnimationFrame"]||
 window[u[v]+"CancelRequestAnimationFrame"];m||(m=function(a){return setTimeout(a,25)},x=clearTimeout);return d});
 
+// const container = document.querySelector('.scrollable-container');
 
-const container = document.querySelector('.scrollable-container');
-const scrollLeftButton = document.querySelector('.scroll-left');
-const scrollRightButton = document.querySelector('.scroll-right');
+// const container1 = document.querySelector('.scrollable-container-1');
+// const scrollLeftButton = document.querySelector('.scroll-left');
+// const scrollRightButton = document.querySelector('.scroll-right');
 
-scrollLeftButton.addEventListener('click', () => {
-  container.scrollLeft -= 200; // Adjust scroll amount as needed
-});
+// scrollLeftButton.addEventListener('click', () => {
+//   container.scrollLeft -= 200; // Adjust scroll amount as needed
+// });
 
-scrollRightButton.addEventListener('click', () => {
-  container.scrollLeft += 200; // Adjust scroll amount as needed
-});
+// scrollRightButton.addEventListener('click', () => {
+//   container.scrollLeft += 200; // Adjust scroll amount as needed
+// });
+
+
+// document.getElementById('navbarToggle').addEventListener('click', function() {
+//   document.getElementById('navbarMenu').classList.toggle('active');
+// });
+
+
+// Function to toggle popup visibility
+function togglePopup(popupId) {
+  const popupWrapper = document.getElementById(`popupWrapper-${popupId}`);
+  if (popupWrapper.style.display === 'block') {
+    popupWrapper.style.display = 'none';
+  } else {
+    popupWrapper.style.display = 'block';
+  }
+}
+
+// Set up event listeners for each popup
+for (let i = 1; i <= 5; i++) {
+  const openBtn = document.getElementById(`openPopupBtn-a${i}`);
+  const closeBtn = document.getElementById(`closePopupBtn-a${i}`);
+  
+  openBtn.addEventListener('click', function () {
+    togglePopup(`a${i}`);
+  });
+
+  closeBtn.addEventListener('click', function () {
+    togglePopup(`a${i}`);
+  });
+}
+// // Function to toggle popup visibility
+// function togglePopup(popupId) {
+//   const popupWrapper = document.getElementById(`popupWrapper-${popupId}`);
+//   if (popupWrapper.style.display === 'block') {
+//     popupWrapper.style.display = 'none';
+//   } else {
+//     popupWrapper.style.display = 'block';
+//   }
+// }
+
+// // Function to set up event listeners for a series of popups
+// function setupPopups(series, count) {
+//   for (let i = 1; i <= count; i++) {
+//     const openBtn = document.getElementById(`openPopupBtn-${series}${i}`);
+//     const closeBtn = document.getElementById(`closePopupBtn-${series}${i}`);
+  
+//     openBtn.addEventListener('click', function () {
+//       togglePopup(`${series}${i}`);
+//     });
+
+//     closeBtn.addEventListener('click', function () {
+//       togglePopup(`${series}${i}`);
+//     });
+//   }
+// }
+
+// // Set up popups for series 'a', 'b', 'c', 'd', and 'e' with count 5
+// const series = ['a'];
+// const count = 5;
+
+// series.forEach((s) => {
+//   setupPopups(s, count);
+// });
