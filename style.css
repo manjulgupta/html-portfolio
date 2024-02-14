@@ -1,28 +1,91 @@
-footer {
-    text-align: center;
-    padding: 5px;
-    background-color: #abbaba;
-    color: #000;
-  }
-#sub1{
-    color:goldenrod;
-    background-color: aliceblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 200;
-  font-size: 100%;
-border-radius: 1rem;
-width: 80%;
+@font-face{
+  font-family: ind;
+  src: url('./assets/fonts/SAMARN__.TTF');
 }
+*{
+  margin: 0;
+  font-family: "Protest Strike", sans-serif;
+  /* BORDER-BOX: MARGIN, PADDING, BORDER INCLUDED INSIDE */
+  border: border-box;
+  
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .1em; Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  /* margin-top: 3vh; */
+  font-size: 4vh;
+  /* height: 10vh; */
+}
+@media(min-width: 1080px){
+  .typewriter h1{
+    font-size:5rem;
+    height: 6rem;
+  }
+  
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+body {
+	background: linear-gradient(-45deg, #DCF2F1,#7FC7D9,  #365486,  #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#sub1{
+  
+  background-color: transparent;
+  font-family: ind,sans-serif;
+  font-weight:bolder;
+  
+  border-radius: 1rem;
+  width: 80%;
+  border: #0F1035 2px solid;
+  padding: 5px 5px 5px 5px;
+  color:black;
+}
+
 .projects{
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   
-  background-image: url("./assets/images/exp_bg.jpeg");
 }
 .projects>li{
-  background-color: teal;
+  background-color: rgba(255, 208, 0, 0.9);
+  border: #0F1035 2px solid;
   border-radius: 1rem;
   margin: 1rem;
   padding:0rem 1rem 1rem 1rem;
@@ -34,4 +97,63 @@ width: 80%;
 
   color: aliceblue;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#footer{
+  background-color: #040510;
+  color: rgb(236, 234, 224);
+  padding-bottom: 1rem;
+  
+}
+.foot-logo{
+  height: 3rem;
+  margin-bottom: 1rem;
+
+}
+.foot-box-1{
+  margin-top: 1rem;
+  width: 30%;
+}
+.foot-box-1>h6{
+  font-size: small;
+}
+.foot-bg{
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.social-foot{
+  display: inline-flex;
+}
+.foot-text{
+  text-decoration: none;
+}
+.foot-text>p{
+  margin: 0;
+  color: white;
+  font-weight: 100;
+  font-size: small;
+  
+}
+.foot-box-2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  
+  width: 30%;
+}
+.foot-sub-box{
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
 }
